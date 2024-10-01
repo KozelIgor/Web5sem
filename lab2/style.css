@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Anticva"; 
+    src: url("fonts/Anticva.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "Cakra"; 
+    src: url("fonts/Cakra.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "Kaph"; 
+    src: url("fonts/Kaph.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+body{
+    background-color:#FFFFCC;
+    max-width: 1440px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    padding-left: 0;
+}
+
+p.fA{
+    font-family: "Anticva";
+    text-align: left;
+}
+p.fB{
+    font-family: "Cakra";
+    text-align: center;
+}
+p.fC{
+    font-family: "Kaph";
+    text-align: right;
+}
+
+img{
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+h1{
+  font-weight: 500;  
+}
