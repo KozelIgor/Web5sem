@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банк "Гермес. Платёжная форма"</title>
+</head>
+<body>
+    <table cellpadding="5">
+        <tr>
+            <td valign="top">
+                <p>ПЛАТЕЖНАЯ ФОРМА</p>
+                <p>Банк "Гермес"</p>
+                <p align="center">--- --- --- --- ---</p>
+                <p>Распечатанная форма</p>
+                <p>не является платёжным</p>
+                <p>документом. Платёжный</p>
+                <p>документ можно</p>
+                <p>получить в личном</p>
+                <p>кабинете или в</p>
+                <p>отделении банка.</p>
+            </td>
+            <td>
+                <form method="POST" name="1">
+                    <label><font size="4">Расчётный счёт №</font><input type="text" size="60"/></label>
+                    <p align="center">(счёт получателя)</p>
+                    <input type="text" size="80">
+                    <p align="center">(ФИО получателя платежа)</p>
+                    <p><input type="text" size="80"></p>
+                    <p align="center">(наименование банка)</p>
+                    <input type="text" size="80">
+                    <p align="center">(банковские реквизиты)</p>
+                    <label><font size="4">Лицевой счёт №</font><input type="text" size="62"/></label>
+                    <p align="center">(счёт отправителя)</p>
+                    <input type="text" size="80">
+                    <p align="center">(ФИО полностью)</p>
+                    <input type="text" size="80">
+                    <p align="center">(адрес плательщика)</p>
+                    <fieldset>
+                        <legend>Выберите условия платежа:</legend>
+                        <label><font size="4">Дата отправки: </font><input type="date"/></label>
+                        <p><label><font size="4">Валюта: </font>
+                            <select>
+                                <option value="byn">Белорусский рубль BYN</option>
+                                <option value="rub">Российский рубль RUB</option>
+                                <option value="usd">Американский доллар USD</option>
+                                <option value="eur">Европейское евро EUR</option>
+                            </select></label></p>
+                        <label><font size="4">Сумма: </font><input type="text"/></label>
+                    </fieldset>
+                    <p align="center"><input class="btn1" type="button" value="Подтвердить платёж"></p>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
