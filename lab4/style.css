@@ -1,0 +1,128 @@
+html {
+    font-family: sans-serif;
+  }
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+} 
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+button {
+  margin: 50px;
+  font-size: 20px;
+  background-color: red;
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+button:hover {
+  margin: 50px;
+  font-size: 20px;
+  background-color: green;
+  animation-play-state: paused;
+}
+
+.background {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  margin-top: 210px;
+  border-radius: 50%;
+  background-color: blue;
+  position: relative;
+  animation: bounce 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 200px;
+  }
+  10% {
+    bottom: 0px;
+  }
+  30% {
+    bottom: 100px;
+  }
+  40% {
+    bottom: 0px;
+  }
+  60% {
+    bottom: 30px;
+  }
+  70% {
+    bottom: 0px;
+  }
+  90% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+a:hover {
+  color: green;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: green;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .25s linear;
+}
+a:hover::after {
+  transform: scaleX(1);
+}
